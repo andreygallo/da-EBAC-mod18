@@ -7,7 +7,7 @@ gasolina_df
 
 with sns.axes_style('whitegrid'):
 
-  grafico = sns.lineplot(data=gasolina_df, x="dia", y="venda", palette="pastel")
+  grafico = sns.lineplot(data=gasolina_df, x="dia", y="venda")
   grafico.set(title='Preço Gasolina', xlabel='Dia', ylabel='Preço');
   plt.savefig('gasolina.png', format='png')
   plt.show()
